@@ -1,0 +1,73 @@
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+              url('https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/mtn%20falls%20pond.jpg/:/rs=w:1920,m');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.realtor-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+              url('/images/realtor-bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.search-form {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.floating-nav {
+  transition: all 0.3s ease;
+}
+
+.floating-nav.scrolled {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.floating-nav.scrolled a {
+  color: #F59E0B;
+}
+
+.floating-nav.scrolled .homes-text {
+  color: #1e40af;
+}
+
+.floating-nav.scrolled i {
+  color: #1e40af;
+}
+
+.pahrump {
+  text-shadow: 2px 2px #ccc;
+}
