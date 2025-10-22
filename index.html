@@ -73,7 +73,7 @@
           MARCI METZGER - THE RIDGE REALTY GROUP
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="#search" class="bg-secondary hover:bg-yellow-500 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105">
+          <a href="#search" class="bg-secondary hover:bg-yellow-500 hover:shadow-lg text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105">
             Search Properties <i class="fa-solid fa-magnifying-glass mx-1"></i>
           </a>
           <a href="#contact" class="border-2 border-white hover:bg-white hover:text-primary text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300">
@@ -101,28 +101,28 @@
   <!-- Realtor Profile Section -->
   <section class="realtor-bg py-20 text-white">
     <div class="container mx-auto px-6">
-      <div class="max-w-4xl mx-auto text-center fade-in">
-        <div class="w-40 h-40 mx-auto mb-8 rounded-full overflow-hidden border-4 border-white shadow-lg">
+      <div class="max-w-4xl mx-auto text-center fade-in p-8">
+        <div class="w-40 h-40 mx-auto mb-8 rounded-full hover:-translate-y-0.5 transition-all duration-300 overflow-hidden border-4 border-white shadow-[9px_10px_22px_6px_rgba(0,_0,_0,_0.1)]">
           <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/photo-5db79f9.jpg/:/cr=t:14.65%25,l:0%25,w:100%25,h:66.64%25/rs=w:365,h:365,cg:true" 
                alt="Marci Metzger" class="w-full h-full object-cover">
         </div>
-        <h3 class="text-3xl md:text-4xl font-bold mb-4 [text-shadow:_0_8px_8px_rgb(105_105_105_/_0.8)]">MARCI METZGER</h3>
-        <p class="text-xl mb-6 [text-shadow:_0_8px_8px_rgb(105_105_105_/_0.8)]">REALTOR FOR NEARLY 3 DECADES!</p>
-        <p class="text-lg opacity-90 max-w-2xl mx-auto">
+        <h3 class="text-3xl md:text-4xl font-bold mb-4 [text-shadow:_3px_5px_8px_#605c5d]">MARCI METZGER</h3>
+        <p class="text-xl mb-6 [text-shadow:_3px_5px_8px_#605c5d]">REALTOR FOR NEARLY 3 DECADES!</p>
+        <p class="text-lg opacity-90 max-w-2xl mx-auto [text-shadow:_3px_5px_8px_#605c5d]">
           With over 10 years of experience in real estate, Marci has helped hundreds of families find their dream homes and achieve their real estate goals.
         </p>
         <div class="flex justify-center space-x-8 mt-8">
-          <div class="text-center">
-            <div class="text-3xl font-bold text-secondary">500+</div>
-            <div class="text-sm">Properties Sold</div>
+          <div class="text-center hover:-translate-y-0.5 transition-all duration-300 p-4 rounded-lg">
+            <div class="text-3xl font-bold text-secondary [text-shadow:_2px_3px_5px_#905d04]">500+</div>
+            <div class="text-sm [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.4)]">Properties Sold</div>
           </div>
-          <div class="text-center">
-            <div class="text-3xl font-bold text-secondary">$2.5B+</div>
-            <div class="text-sm">Total Sales Volume</div>
+          <div class="text-center hover:-translate-y-0.5 transition-all duration-300 p-4 rounded-lg">
+            <div class="text-3xl font-bold text-secondary [text-shadow:_2px_3px_5px_#905d04]">$2.5B+</div>
+            <div class="text-sm [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.4)]">Total Sales Volume</div>
           </div>
-          <div class="text-center">
-            <div class="text-3xl font-bold text-secondary">98%</div>
-            <div class="text-sm">Client Satisfaction</div>
+          <div class="text-center hover:-translate-y-0.5 transition-all duration-300 p-4 rounded-lg">
+            <div class="text-3xl font-bold text-secondary [text-shadow:_2px_3px_5px_#905d04]">98%</div>
+            <div class="text-sm [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.4)]">Client Satisfaction</div>
           </div>
         </div>
       </div>
@@ -422,7 +422,8 @@
         <p class="text-xl text-gray-600">Explore our stunning collection of luxury properties</p>
       </div>
       
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Desktop Grid Layout (lg and up) -->
+      <div class="hidden lg:grid grid-cols-3 gap-6">
         <div class="gallery-item fade-in">
           <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/5570%20Ailanto-45.jpg-SMALL.JPG/:/rs=w:719,h:479" 
                alt="" class="w-full h-64 object-cover rounded-xl">
@@ -446,6 +447,76 @@
         <div class="gallery-item fade-in">
           <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/4460%20Roseworthy-52.jpg-SMALL.JPG/:/rs=w:719,h:479" 
                alt="" class="w-full h-64 object-cover rounded-xl">
+        </div>
+      </div>
+
+      <!-- Mobile/Tablet Featured Gallery with Slider -->
+      <div class="lg:hidden">
+        <!-- Featured Image -->
+        <div class="mb-6 fade-in">
+          <div class="relative overflow-hidden rounded-2xl shadow-2xl">
+            <img id="featured-image" 
+                 src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/5570%20Ailanto-45.jpg-SMALL.JPG/:/rs=w:719,h:479" 
+                 alt="Featured Property" 
+                 class="w-full h-80 md:h-96 object-cover transition-all duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+            <div class="absolute bottom-4 left-4 text-white">
+              <h3 class="text-xl font-bold">Luxury Property</h3>
+              <p class="text-sm opacity-90">Featured Listing</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Thumbnail Slider -->
+        <div class="relative fade-in">
+          <div class="flex space-x-4 overflow-x-auto scrollbar-hide pb-2" id="gallery-slider">
+            <div class="flex-none">
+              <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/5570%20Ailanto-45.jpg-SMALL.JPG/:/rs=w:719,h:479" 
+                   alt="Property 1" 
+                   class="w-24 h-16 md:w-32 md:h-20 object-cover rounded-lg cursor-pointer opacity-70 hover:opacity-100 transition-opacity duration-300 border-2 border-transparent hover:border-primary"
+                   onclick="changeFeaturedImage(this.src, 'Luxury Property 1')">
+            </div>
+            <div class="flex-none">
+              <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/5570%20Ailanto-14.jpg-SMALL.JPG/:/cr=t:0%25,l:0.05%25,w:99.9%25,h:99.9%25/rs=w:719,h:479" 
+                   alt="Property 2" 
+                   class="w-24 h-16 md:w-32 md:h-20 object-cover rounded-lg cursor-pointer opacity-70 hover:opacity-100 transition-opacity duration-300 border-2 border-transparent hover:border-primary"
+                   onclick="changeFeaturedImage(this.src, 'Luxury Property 2')">
+            </div>
+            <div class="flex-none">
+              <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/4787%20E%20Beacon%20Ridge-54.jpg-SMALL.JPG/:/rs=w:719,h:479" 
+                   alt="Property 3" 
+                   class="w-24 h-16 md:w-32 md:h-20 object-cover rounded-lg cursor-pointer opacity-70 hover:opacity-100 transition-opacity duration-300 border-2 border-transparent hover:border-primary"
+                   onclick="changeFeaturedImage(this.src, 'Luxury Property 3')">
+            </div>
+            <div class="flex-none">
+              <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/4787%20E%20Beacon%20Ridge-53.jpg-SMALL.JPG/:/rs=w:719,h:480" 
+                   alt="Property 4" 
+                   class="w-24 h-16 md:w-32 md:h-20 object-cover rounded-lg cursor-pointer opacity-70 hover:opacity-100 transition-opacity duration-300 border-2 border-transparent hover:border-primary"
+                   onclick="changeFeaturedImage(this.src, 'Luxury Property 4')">
+            </div>
+            <div class="flex-none">
+              <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/4787%20E%20Beacon%20Ridge-41.jpg-SMALL.JPG/:/rs=w:719,h:480" 
+                   alt="Property 5" 
+                   class="w-24 h-16 md:w-32 md:h-20 object-cover rounded-lg cursor-pointer opacity-70 hover:opacity-100 transition-opacity duration-300 border-2 border-transparent hover:border-primary"
+                   onclick="changeFeaturedImage(this.src, 'Luxury Property 5')">
+            </div>
+            <div class="flex-none">
+              <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/4460%20Roseworthy-52.jpg-SMALL.JPG/:/rs=w:719,h:479" 
+                   alt="Property 6" 
+                   class="w-24 h-16 md:w-32 md:h-20 object-cover rounded-lg cursor-pointer opacity-70 hover:opacity-100 transition-opacity duration-300 border-2 border-transparent hover:border-primary"
+                   onclick="changeFeaturedImage(this.src, 'Luxury Property 6')">
+            </div>
+          </div>
+          
+          <!-- Navigation Arrows -->
+          <button onclick="scrollSlider(-1)" 
+                  class="absolute left-0 top-1/2 -translate-y-1/2 -ml-4 bg-white/90 hover:bg-white text-gray-800 rounded-full p-2 shadow-lg transition-all duration-300 hover:scale-110">
+            <i class="fas fa-chevron-left text-sm"></i>
+          </button>
+          <button onclick="scrollSlider(1)" 
+                  class="absolute right-0 top-1/2 -translate-y-1/2 -mr-4 bg-white/90 hover:bg-white text-gray-800 rounded-full p-2 shadow-lg transition-all duration-300 hover:scale-110">
+            <i class="fas fa-chevron-right text-sm"></i>
+          </button>
         </div>
       </div>
     </div>

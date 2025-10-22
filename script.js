@@ -68,6 +68,72 @@ searchButton.addEventListener('click', (e) => {
   alert('Search functionality would be implemented here!');
 });
 
+// Gallery slider functionality
+function changeFeaturedImage(imageSrc, title) {
+  const featuredImage = document.getElementById('featured-image');
+  const titleElement = featuredImage.parentElement.querySelector('h3');
+  
+  // Add fade effect
+  featuredImage.style.opacity = '0';
+  
+  setTimeout(() => {
+    featuredImage.src = imageSrc;
+    if (titleElement) {
+      titleElement.textContent = title;
+    }
+    featuredImage.style.opacity = '1';
+  }, 250);
+  
+  // Update active thumbnail
+  document.querySelectorAll('#gallery-slider img').forEach(img => {
+    img.classList.remove('opacity-100', 'border-primary');
+    img.classList.add('opacity-70', 'border-transparent');
+  });
+  
+  event.target.classList.remove('opacity-70', 'border-transparent');
+  event.target.classList.add('opacity-100', 'border-primary');
+}
+
+function scrollSlider(direction) {
+  const slider = document.getElementById('gallery-slider');
+  const scrollAmount = 200; // Adjust scroll amount as needed
+  
+  if (direction === -1) {
+    slider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+  } else {
+    slider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  }
+}
+
+// Initialize gallery slider
+document.addEventListener('DOMContentLoaded', function() {
+  // Set first thumbnail as active
+  const firstThumbnail = document.querySelector('#gallery-slider img');
+  if (firstThumbnail) {
+    firstThumbnail.classList.remove('opacity-70', 'border-transparent');
+    firstThumbnail.classList.add('opacity-100', 'border-primary');
+  }
+  
+  // Add touch/swipe support for mobile
+  let startX = 0;
+  let scrollLeft = 0;
+  const slider = document.getElementById('gallery-slider');
+  
+  if (slider) {
+    slider.addEventListener('touchstart', (e) => {
+      startX = e.touches[0].pageX - slider.offsetLeft;
+      scrollLeft = slider.scrollLeft;
+    });
+    
+    slider.addEventListener('touchmove', (e) => {
+      e.preventDefault();
+      const x = e.touches[0].pageX - slider.offsetLeft;
+      const walk = (x - startX) * 2;
+      slider.scrollLeft = scrollLeft - walk;
+    });
+  }
+});
+
 // Add loading animation
 window.addEventListener('load', () => {
   document.body.style.opacity = '1';

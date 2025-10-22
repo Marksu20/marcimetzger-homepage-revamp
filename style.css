@@ -71,3 +71,17 @@
 .pahrump {
   text-shadow: 2px 2px #ccc;
 }
+
+/* Gallery Slider Styles */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery-transition {
+  transition: all 0.3s ease;
+}
